@@ -5,8 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeometricShapes
-{
+namespace GeometricShapes;
     internal class Quad {
         public int Side1 { get; set; } = 0;
         public int Side2 { get; set; } = 0;
@@ -27,5 +26,5 @@ namespace GeometricShapes
         Side4 = side4;
     }
 
-    }
 }
+

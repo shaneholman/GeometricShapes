@@ -4,25 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeometricShapes
-{
-    internal class Rect
-    {
-        public int Side1 { get; set; } = 0;
-        public int Side2 { get; set; } = 0;
-        public int Perimeter()
-        {
-            return 2 * (Side1 + Side2);
-        }
-        public int Area()
-        {
-            return Side1 * Side2;
-        }
-        public Rect(int side1, int side2)
-        {
-            Side1 = side1;
-            Side2 = side2;
-        }
+namespace GeometricShapes;
+
+internal class Rect : Quad{
+
+    public int Area(){
+        return Side1 * Side2;
+    }
+
+    public Rect(int side1, int side2) : base(side1, side2, side1, side2){
+
     }
 }
+    
+
 
